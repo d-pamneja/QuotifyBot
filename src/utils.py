@@ -2,6 +2,8 @@ from dependencies import *
 
 connection = sqlite3.connect("./Data/database.db", check_same_thread=False)
 cursor = connection.cursor()
+KEY = os.getenv("OPENAI_API_KEY")
+print(KEY)
 client = OpenAI(api_key=KEY)
 
 def get_response(client,system_intruction,text):
