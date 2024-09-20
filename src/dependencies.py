@@ -13,3 +13,4 @@ import streamlit as st
 os.environ.pop("OPENAI_API_KEY", None)
 load_dotenv()
 KEY = os.getenv("OPENAI_API_KEY")
+print(KEY)
