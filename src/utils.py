@@ -3,7 +3,7 @@ from dependencies import *
 connection = sqlite3.connect("./Data/database.db", check_same_thread=False)
 cursor = connection.cursor()
 print(KEY)
-client = OpenAI(api_key=KEY)
+client = OpenAI()
 
 def get_response(client,system_intruction,text):
     completion = client.chat.completions.create(
