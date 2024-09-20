@@ -3,6 +3,8 @@ import numpy as np
 import sqlite3
 
 import os
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
 from openai import OpenAI
 from dotenv import load_dotenv
 
